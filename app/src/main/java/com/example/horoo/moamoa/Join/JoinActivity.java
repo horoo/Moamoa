@@ -34,7 +34,6 @@ public class JoinActivity extends AppCompatActivity {
     private String phone;
     EditText Name, Phone, Password, Password_conf;
     final String TAG = "httptransfer";
-    private Handler mHandler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,7 +50,10 @@ public class JoinActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 final Handler handler = new Handler();
-                password = Name.getText().toString();
+                password = Password.getText().toString();
+                name = Name.getText().toString();
+                phone = Phone.getText().toString();
+
                 if(!(password.equals(Password_conf.getText().toString())))
                     Toast.makeText(JoinActivity.this, "비밀번호와 비밀번호 확인이 같지 않습니다.", Toast.LENGTH_SHORT).show();
                 // TODO 약관 만드는거????
