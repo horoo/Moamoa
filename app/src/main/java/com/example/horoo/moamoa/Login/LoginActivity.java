@@ -1,4 +1,4 @@
-package com.example.horoo.moamoa;
+package com.example.horoo.moamoa.Login;
 
 import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
@@ -7,6 +7,8 @@ import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.view.*;
+
+import com.example.horoo.moamoa.R;
 
 
 public class LoginActivity extends AppCompatActivity {

@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">모아모아</string>
-
+    <string name="app_login_id">이름 혹은 전화번호(Name or Phone number)</string>
+    <string name="app_login_pw">패스워드(Password)</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="host">192.168.0.1</string>
@@ -8,6 +9,8 @@
     <string name="app_title">모아모아</string>
     <string name="app_discription">세상의 모든 쿠폰을 한 곳에!</string>
     <string name="app_login">로그인</string>
+    <string name="app_signup">회원가입</string>
+    <string name="app_auto_login">자동 로그인</string>
     <string name="app_logout">로그아웃</string>
     <string name="app_my_coupon">나의 쿠폰함</string>
     <string name="app_make_my_coupon">쿠폰 만들기</string>

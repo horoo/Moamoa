@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.horoo.moamoa.LoginActivity">
+    >
 
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_margin="0dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
@@ -30,7 +30,9 @@
             android:id="@+id/idInput"
             android:layout_width="300dp"
             android:layout_height="40dp"
-            android:background="@color/colorMyCpText">
+            android:background="@color/colorMyCpText"
+            android:hint="@string/app_login_id"
+            android:textSize="14sp">
 
             <requestFocus />
         </EditText>
@@ -42,7 +44,10 @@
             android:layout_height="40dp"
             android:layout_below="@+id/idInput"
             android:layout_margin="3dp"
-            android:background="@color/colorMyCpText" />
+            android:background="@color/colorMyCpText"
+            android:hint="@string/app_login_pw"
+            android:inputType="textPassword"
+            android:textSize="14sp" />
 
         <LinearLayout
             android:layout_width="300dp"
@@ -59,8 +64,9 @@
                 android:layout_toStartOf="@+id/signupButton"
                 android:layout_weight="1"
                 android:background="@color/colorPrimaryDark"
-                android:text="Log in"
-                android:textAllCaps="false" />
+                android:text="@string/app_login"
+                android:textAllCaps="false"
+                android:textColor="@color/colorMyCpText" />
 
             <Button
                 android:id="@+id/signupButton"
@@ -71,8 +77,9 @@
                 android:layout_marginTop="5dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimaryDark"
-                android:text="Sign up"
-                android:textAllCaps="false" />
+                android:text="@string/app_signup"
+                android:textAllCaps="false"
+                android:textColor="@color/colorMyCpText" />
         </LinearLayout>
 
         <CheckBox
@@ -82,9 +89,10 @@
             android:layout_below="@+id/loginButton"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="20dp"
-            android:text="Remember login" />
+            android:text="@string/app_auto_login"
+            android:textColor="@color/colorMyCpText" />
 
     </LinearLayout>
 
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>

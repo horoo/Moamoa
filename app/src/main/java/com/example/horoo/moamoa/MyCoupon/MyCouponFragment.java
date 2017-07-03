@@ -42,7 +42,7 @@ public class MyCouponFragment extends Fragment {
         myCouponViewPagerAdapter = new MyCouponViewPagerAdapter(inflater,mContext);
         myCouponView.setAdapter(myCouponViewPagerAdapter);
         myCouponView.setOffscreenPageLimit(3);
-        myCouponView.setCurrentItem(1); // position 1 is center Cam UI
+        myCouponView.setCurrentItem(0); // position 1 is center Cam UI
         myCouponView.setOnPageChangeListener(MainMenuPagerChangeListener());
     }
 
@@ -60,7 +60,7 @@ public class MyCouponFragment extends Fragment {
 
             @Override
             public void onPageSelected(int position) {
-                Toast.makeText(mContext,"Page " + position,Toast.LENGTH_SHORT).show();
+                //Toast.makeText(mContext,"Page " + position,Toast.LENGTH_SHORT).show();
                 switch(position){
                     case 0:{
                         current_main_menu_pos = 0;
