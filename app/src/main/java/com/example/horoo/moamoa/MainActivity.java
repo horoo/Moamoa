@@ -1,8 +1,14 @@
 package com.example.horoo.moamoa;
 
+import android.app.Activity;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
+import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -12,10 +18,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import com.example.horoo.moamoa.MyCoupon.MyCouponFragment;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
+    public  Activity mActivity;
+    public  Context mContext;
+    private Fragment myFragment;
+    private FragmentManager mainFrameManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +51,8 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        init();
     }
 
     @Override
@@ -80,15 +93,15 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        if (id == R.id.nav_login) {
 
-        } else if (id == R.id.nav_slideshow) {
+        } else if (id == R.id.nav_my_coupon) {
 
-        } else if (id == R.id.nav_manage) {
+        } else if (id == R.id.nav_make_coupon) {
 
-        } else if (id == R.id.nav_share) {
+        } else if (id == R.id.nav_search_location) {
+
+        }else if (id == R.id.nav_share) {
 
         } else if (id == R.id.nav_send) {
 
@@ -98,4 +111,28 @@ public class MainActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+    private void init(){
+        mActivity = this;
+        mContext = getApplicationContext();
+        myFragment = new MyCouponFragment();
+        initFragmentManager();
+    }
+
+    private void initFragmentManager(){
+
+        mainFrameManager = getSupportFragmentManager();
+        FragmentTransaction mainTransaction = mainFrameManager.beginTransaction();
+        mainTransaction.add(R.id.main_frame, myFragment);
+        mainTransaction.commit();
+    }
+
+    private void setFragment(Fragment fragment){
+
+        mainFrameManager = getSupportFragmentManager();
+        FragmentTransaction mainTransaction = mainFrameManager.beginTransaction();
+        mainTransaction.add(R.id.main_frame, fragment);
+        mainTransaction.commit();
+    }
+
 }

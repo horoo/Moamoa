@@ -1,0 +1,515 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorMyCpText"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/cp_main_image"
+                android:layout_width="match_parent"
+                android:layout_height="270dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/bakery_sample_image" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/cp_main_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="PusanNationalUniv, Bakery"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/cp_main_discript"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="5dp"
+                    android:text="this bakery is open 07:00AM ~ 07:00PM" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/background_light"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Reward"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="현재 사용 가능한 쿠폰은 0개 입니다"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/bread_example_image" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fresh Strawberry Sandwitch"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="duration : 17.01.01~17.03.01"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="required Stamp : 10"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/background_light"
+                        android:text="사용하기" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/bread2_example" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fresh Soy Breads"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="duration : 17.01.01~17.03.01"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="required Stamp : 5"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/background_light"
+                        android:text="사용하기" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/imageView5"
+                        android:layout_width="80dp"
+                        android:layout_height="60dp"
+                        android:layout_margin="5dp"
+                        android:scaleType="fitXY"
+                        app:srcCompat="@drawable/bread3_example" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Fresh Baguette"
+                            android:textSize="14sp" />
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="duration : 17.01.01~17.03.01"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="required Stamp : 10"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:background="@android:color/background_light"
+                        android:text="사용하기" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="5dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Location"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:text="Jang-jun street 172-5"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/map_example2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/stamp_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/background_light"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/my_cp_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="My Stamps"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/my_cp_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:text="스탬프 개수 : 4개"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/stamp_example" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="2017-01-02 일반구매 적립 스탬프"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="유효기간 : 17.01.01 ~ 18.01.01"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/stamp_example" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="2017-01-02 일반구매 적립 스탬프"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="유효기간 : 17.01.01 ~ 18.01.01"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            app:srcCompat="@drawable/stamp_example" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="2017-01-02 일반구매 적립 스탬프"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="유효기간 : 17.01.01 ~ 18.01.01"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorAccent"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="left"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/imageView4"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:scaleType="fitXY"
+                            app:srcCompat="@drawable/stamp_example" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="2017-01-02 일반구매 적립 스탬프"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:id="@+id/textView6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center_vertical"
+                                android:text="유효기간 : 17.01.01 ~ 18.01.01"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
